@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.menu {
+    list-style: none;
+    max-width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li+ li:not(:last-child) {
+    border-right: 1px solid #333;
+}
+
+
+@media screen and (max-width: 767px) {
+   .menu {
+    flex-direction: column
+   }
+
+    .title {
+    margin-right: auto;
+   }
+li+ li{
+    display: flex;
+    margin-right: auto;
+    border-right: none;
+    border-bottom: 1px solid #333;
+    
+}
