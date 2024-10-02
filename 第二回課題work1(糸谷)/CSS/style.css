@@ -33,6 +33,16 @@
     border: 1px solid black
 }
 
+.header {
+    display: flex;
+}
+    
+li {
+    padding: 5px 20px
+}
+
+
+
 .menu {
     list-style: none;
     max-width: 960px;
@@ -43,7 +53,7 @@
     align-items: center;
 }
 
-li+ li:not(:last-child) {
+li:not(:last-child) {
     border-right: 1px solid #333;
 }
 

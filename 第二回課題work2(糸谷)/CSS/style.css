@@ -1,13 +1,20 @@
 @charset "utf-8";
 
+
+
 .menu {
     list-style: none;
     max-width: 960px;
-    padding: 0;
+    padding: o;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: content-box;
+}
+
+li {
+    padding: 5px 20px;
 }
 
 li+ li:not(:last-child) {
@@ -16,17 +23,26 @@ li+ li:not(:last-child) {
 
 
 @media screen and (max-width: 767px) {
+
+    .header {
+        flex-direction: column;
+    }
    .menu {
-    flex-direction: column
+    flex-direction: column;
+    width: 100%;
    }
 
     .title {
     margin-right: auto;
-   }
-li+ li{
+   } 
+.menu li{
     display: flex;
     margin-right: auto;
     border-right: none;
     border-bottom: 1px solid #333;
+    width: 100%;
     
+    }
+
 }
+
