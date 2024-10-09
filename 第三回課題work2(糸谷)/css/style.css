@@ -63,7 +63,9 @@ h1 {
     justify-content: center;
     gap: 20px
     
+    
 }
+
 
 .item {
   width: 30%;
@@ -84,5 +86,13 @@ p {
 @media screen and (max-width: 400px) {
 .hako {
   flex-direction: column;
+  padding: 10px;
+}
+.item {
+  width: 100%;
+}
+
+img {
+  width: 100%;
 }
 }
