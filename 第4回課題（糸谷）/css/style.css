@@ -235,7 +235,7 @@ a:hover {
   width: 50%;
 }
 
-#about > div {
+#about-us > div {
   width: 41%;
 }
 
@@ -246,56 +246,75 @@ a:hover {
 
 .menu-header {
   width: 200px;
+  padding: 100px 0 50px 0;
   display: block;
   margin: 0 auto;
+}
+
+.menu-box {
+  width: 30%;
 }
 .menu-img {
   display: flex;
   justify-content:space-between;
 }
 
-.drink-img {
-  border-radius: 0 60px 0 0;
+.menu-img {
   position: relative;
 }
-.drink-text {
+.menu-img img {
+  border-radius: 0 40px 0 0;
+}
+.menu-text {
   position: absolute;
-  top: 1840px;
-  left: 270px;
-}
-.food-img {
-  border-radius: 0 60px 0 0;
-  position: relative;
-}
-.food-text {
-  position: absolute;
-  top: 1840px;
-  left: 620px;
-}
-
-.sweets-img {
-  border-radius: 0 60px 0 0;
-  position: relative;
-}
-.sweets-text {
-  position: absolute;
-  top: 1840px;
-  left: 970px;
-}
-
-.menu-category {
-  display: flex;
-  justify-content: space-between;
+  top: 95%;
+  left: 10px;
   font-size: 38px;
   color: #D30202;
 }
 
+.menu-contents {
+  font-size: 17px;
+  padding: 40px 0 75px 0;
+}
 
-
-.food-text {
+.gallery-header {
+  width: 200px;
+  padding: 20px 0 20px 0;
+  display: block;
   margin: 0 auto;
 }
 
+.gallery-box {
+  max-width: 1920px;
+  display: flex;
+  
+  /* width: 100%; */
+  /* justify-content: space-between; */
+}
 
+.gallery-item {
 
+}
 
+/* .event-header {
+  width: 150px;
+  padding: 40px 0 40px 0;
+  display: block;
+  margin: 0 auto;
+} */
+
+/* .event-box {
+  background: #fff; 
+  border: #4F260B solid 3px; 
+  font-size: 100%; 
+  padding: 30px;
+}
+
+.p-padding {
+  padding: 10px;
+}
+
+.event-a {
+  display: flex;
+} */
