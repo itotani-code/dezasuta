@@ -192,18 +192,15 @@ a:hover {
 }
 
 
-
-
-
-
 .maincontents {
   background-color: #E8D9BF;
 }
 
+/* キャッチコピー部分 */
 .catch-en {
   font-size: 30px;
   text-align: center;
-  padding: 100px 0 65px 0;
+  padding: 40px 0 30px 0;
 }
 
 .catch-ja {
@@ -220,8 +217,10 @@ a:hover {
   letter-spacing: 0.1em;
   text-align: center;
   /* padding: 40px; */
-  margin: 50px 0 50px 0;
+  margin: 30px 0 70px 0;
 }
+
+/* アバウトアス部分 */
 
 /* PC時は改行OFF */
 .sma {
@@ -263,17 +262,24 @@ a:hover {
   display: none;
 }
 
+.instead  {
+  display: none;
+}
+
 #about-us > .about-img{
   width: 50%;
 }
 
 #about-us > div {
   width: 41%;
+  padding-right: 10px;
 }
 
+/* メニュー部分 */
 #menu {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .menu-header {
@@ -286,7 +292,7 @@ a:hover {
 .menu-box {
   width: 30%;
 }
-.menu-img {
+.menu-contents {
   display: flex;
   justify-content:space-between;
 }
@@ -311,6 +317,7 @@ a:hover {
   line-height: 1.4;
 }
 
+/* ギャラリー部分 */
 .gallery-header {
   width: 245px;
   padding: 20px 0 20px 0;
@@ -324,15 +331,19 @@ a:hover {
   width: 100%; 
   justify-content: space-between;
 }
+.sp-gallery-slider {
+  display: flex;
+}
 
-.gallery-item-sp {
-  /* display: none; */
+/* イベント部分 */
+#event {
+  padding: 0 10px;
 }
 
 
 .event-header {
   width: 173px;
-  padding: 60px 0 40px 0;
+  padding: 35px 0 20px 0;
   display: block;
   margin: 0 auto;
 }
@@ -346,16 +357,18 @@ a:hover {
   font-size: 100%; 
   padding: 25px;
 }
+.event_description > div {
+  width: fit-content;
+  margin: 0 auto;
+}
 
 .event-box {
   display: flex;
-  justify-content: center;
   font-size: 23px;
   padding: 15px;
 }
 
-
-
+/* アクセス部分 */
 .access-header {
   width: 200px;
   padding: 70px 0 20px 0;
@@ -375,6 +388,7 @@ iframe {
   height: 470px;
 }
 
+/* フッター部分 */
 footer {
   background-color: #fff;
 }
@@ -397,10 +411,7 @@ footer {
   padding: 30px;
 }
 
-.p-padding {
-  /* width: 18%; */
-  padding: 0 55px 0 0;
-}
+
 
 .event-bottom {
   border-bottom: solid;
@@ -412,11 +423,26 @@ footer {
 }
 
 .to-page {
-  width: 10%;
+  width: 125px;
   position: fixed;
   bottom: 20px;
   right: 30px;
 }
+
+@media screen and (max-width: 870px) {
+  .catch-ja {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .message {
+    font-size: 20px;
+  }
+  .commitment {
+    font-size: 40px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -461,17 +487,21 @@ footer {
     /* height: 70%; */
     /* height: 600px; */
   }
+  .instead {
+    display: block;
+  }
+  .side-padding {
+    padding: 20px;
+  }
   .commitment-sp {
     max-width: 90%;
     font-size: 36px;
     line-height: 1.2;
-    margin-left: auto;
     padding: 35px 0 30px 0;
   }
   .heart-sp {
-    max-width: 90%;
-    margin-left: auto;
     line-height: 1.75;
+    font-size: 15px;
   }
   .commitment {
     font-size: 33px;
@@ -511,13 +541,20 @@ footer {
     display: none;
   }
   .gallery-item-sp {
+    display: block;
     max-width: 768px;
+    width: 100%;
+  }
+  .gallery-item-sp img {
     width: 100%;
   }
 
   /* イベント部分 */
   .event-box {
     flex-direction: column;
+  }
+  .event-header {
+    width: 96px;
   }
   .event_description {
     width: 80%;
@@ -529,6 +566,9 @@ footer {
   }
 
   /* アクセスの部分 */
+  .access-header {
+    width: 120px;
+  }
   iframe {
     height: 190px;
   }
@@ -537,12 +577,12 @@ footer {
   .footer {
     flex-direction: column;
   }
-.p-padding {
-  padding: 10px;
-  font-size: 15px;
+.p-footer {
+  font-size: 18px;
+  padding: 9px 0 9px 0;
 }
 .to-page {
-  width: 25%;
+  width: 100px;
 }
 
 }

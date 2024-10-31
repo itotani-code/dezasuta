@@ -82,10 +82,15 @@
    </section>
 
    <h2><img class="about-heading-sp" src="./images/about_us@2x.png" alt=""></h2>
+
    <section class="about-us-responsive">
-    
-    <img class="about-img-sp" src="./images/pc_about-100.jpg" alt="">
-  <div>
+    <picture>
+      <source srcset="about_us@2x-100.jpg" media="(max-width: 767px)">
+      <img class="about-img-sp" src="./images/pc_about-100.jpg" alt="">
+    </picture>
+      <img class="instead" src="./images/about_us@2x-100.jpg" alt="">
+
+  <div class="side-padding">
      <p class="commitment-sp">私たちが提供する<br>こだわりのコーヒー</p>
      <p class="heart-sp">サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
   </div>
@@ -96,7 +101,7 @@
 
   <section id="menu">
     <h2><img class="menu-header" src="./images/menu@2x.png" alt=""></h2>
-    <div class="menu-img">
+    <div class="menu-contents">
 
       <div class="menu-box">
         <div class="menu-img">
@@ -151,9 +156,50 @@
   </div>
   </section>
 
-  <div class="gallery-item-sp">
-    <img src="./images/mobile_gallery-100.jpg" alt="">
+
+  <div class="sp-gallery-slider">
+   <div>
+      <picture>
+        <source srcset="./images/pc_gallery_01-100.jpg" media="(max-width: 767px)">
+        <img class="gallery-item-sp" src="./images/pc_gallary_01-100.jpg" alt="">
+      </picture>
+   </div>
+
+   <div>
+    <picture>
+      <source srcset="./images/pc_gallary_02-100.jpg" media="(max-width: 767px)">
+      <img class="gallery-item-sp" src="./images/pc_gallary_02-100.jpg" alt="">
+    </picture>
+ </div>
+
+ <div>
+  <picture>
+    <source srcset="./images/pc_gallary_03-100.jpg" media="(max-width: 767px)">
+    <img class="gallery-item-sp" src="./images/pc_gallary_03-100.jpg" alt="">
+  </picture>
 </div>
+
+<div>
+  <picture>
+    <source srcset="./images/pc_gallary_04-100.jpg" media="(max-width: 767px)">
+    <img class="gallery-item-sp" src="./images/pc_gallary_04-100.jpg" alt="">
+  </picture>
+</div>
+
+<div>
+  <picture>
+    <source srcset="./images/pc_gallary_05-100.jpg" media="(max-width: 767px)">
+    <img class="gallery-item-sp" src="./images/pc_gallary_05-100.jpg" alt="">
+  </picture>
+</div>
+
+<div>
+  <picture>
+    <source srcset="./images/pc_gallary_01-100_2.jpg" media="(max-width: 767px)">
+    <img class="gallery-item-sp" src="./images/pc_gallary_01-100_2.jpg" alt="">
+  </picture>
+</div>
+  </div>
 
 
 
@@ -162,20 +208,21 @@
   <section id="event">
       <h2 class="event-header"><img src="./images/event@2x.png" alt=""></h2>
 
-    <div class="event_description">
-
+   <div class="event_description">
+    <div>
       <div class="event-box">
-        <p class="p-padding">2020.06.23</p>
-        <p class="event-bottom">7月はイベント出店のため0/0お休みします</p>
+          <p class="p-padding">2020.06.23</p>
+          <p class="event-bottom">7月はイベント出店のため0/0お休みします</p>
+       </div>
+       <div class="event-box">
+          <p class="p-padding">2020.03.15</p>
+          <p class="event-bottom">春の新商品新発売。話題のあのブランドとコラボ</p>
+        </div>
+        <div class="event-box">
+          <p class="p-padding">2020.02.06</p>
+          <p class="event-bottom">コーヒーの日で30%OFFイベントを開催[3日間限定]</p>
       </div>
-      <div class="event-box">
-        <p class="p-padding">2020.03.15</p>
-        <p class="event-bottom">春の新商品新発売。話題のあのブランドとコラボ</p>
-      </div>
-      <div class="event-box">
-        <p class="p-padding">2020.02.06</p>
-        <p class="event-bottom">コーヒーの日で30%OFFイベントを開催[3日間限定]</p>
-      </div>
+    </div>
   </div>
   </section>
 
@@ -193,10 +240,10 @@
     </div>
     
     <div class="hooter-text">
-      <p class="p-padding">OPEN 18:00 / CLOSE 24:00</p>
-      <p class="p-padding">〒150-0022</p>
-      <p class="p-padding">東京都渋谷区東京南123デザインビルB1</p>
-      <p class="p-padding">MAIL:info@designcafe.tokyo</p>
+      <p class="p-footer">OPEN 18:00 / CLOSE 24:00</p>
+      <p class="p-footer">〒150-0022</p>
+      <p class="p-footer">東京都渋谷区東京南123デザインビルB1</p>
+      <p class="p-footer">MAIL:info@designcafe.tokyo</p>
     </div>
     <a href="#header"><img class="to-page" src="./images/to_top@2x.png" alt="PAGE TOP"></a>
   </div>
@@ -229,6 +276,15 @@
           dots: true,
           arrows: false,
         });
+
+        $('.sp-gallery-slider').slick({
+
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: true,
+        })
+
+        
     })
 
 
