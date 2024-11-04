@@ -133,73 +133,53 @@
   <section id="gallery">
     <h2><img class="gallery-header" src="./images/gallery@2x.png" alt=""></h2>
 
-  <div class="gallery-box">
-      <div class="gallery-item">
-          <img src="./images/pc_gallary_05-100.jpg" alt="">
+    <div class="sp-gallery-slider">
+      <div>
+         <picture>
+           <source srcset="./images/pc_gallery_01-100.jpg" media="(max-width: 767px)">
+           <img class="gallery-item-sp" src="./images/pc_gallary_01-100.jpg" alt="">
+         </picture>
       </div>
-
-      <div class="gallery-item">
-          <img src="./images/pc_gallary_04-100.jpg" alt="">
-      </div>
-
-      <div class="gallery-item">
-          <img src="./images/pc_gallary_03-100.jpg" alt="">
-      </div>
-
-      <div class="gallery-item">
-          <img src="./images/pc_gallary_02-100.jpg" alt="">
-      </div>
-
-      <div class="gallery-item">
-          <img src="./images/pc_gallary_01-100.jpg" alt="">
-      </div>
-  </div>
+   
+      <div>
+       <picture>
+         <source srcset="./images/pc_gallary_02-100.jpg" media="(max-width: 767px)">
+         <img class="gallery-item-sp" src="./images/pc_gallary_02-100.jpg" alt="">
+       </picture>
+    </div>
+   
+    <div>
+     <picture>
+       <source srcset="./images/pc_gallary_03-100.jpg" media="(max-width: 767px)">
+       <img class="gallery-item-sp" src="./images/pc_gallary_03-100.jpg" alt="">
+     </picture>
+   </div>
+   
+   <div>
+     <picture>
+       <source srcset="./images/pc_gallary_04-100.jpg" media="(max-width: 767px)">
+       <img class="gallery-item-sp" src="./images/pc_gallary_04-100.jpg" alt="">
+     </picture>
+   </div>
+   
+   <div>
+     <picture>
+       <source srcset="./images/pc_gallary_05-100.jpg" media="(max-width: 767px)">
+       <img class="gallery-item-sp" src="./images/pc_gallary_05-100.jpg" alt="">
+     </picture>
+   </div>
+   
+   <div>
+     <picture>
+       <source srcset="./images/pc_gallary_01-100_2.jpg" media="(max-width: 767px)">
+       <img class="gallery-item-sp" src="./images/pc_gallary_01-100_2.jpg" alt="">
+     </picture>
+   </div>
+     </div>
   </section>
 
 
-  <div class="sp-gallery-slider">
-   <div>
-      <picture>
-        <source srcset="./images/pc_gallery_01-100.jpg" media="(max-width: 767px)">
-        <img class="gallery-item-sp" src="./images/pc_gallary_01-100.jpg" alt="">
-      </picture>
-   </div>
-
-   <div>
-    <picture>
-      <source srcset="./images/pc_gallary_02-100.jpg" media="(max-width: 767px)">
-      <img class="gallery-item-sp" src="./images/pc_gallary_02-100.jpg" alt="">
-    </picture>
- </div>
-
- <div>
-  <picture>
-    <source srcset="./images/pc_gallary_03-100.jpg" media="(max-width: 767px)">
-    <img class="gallery-item-sp" src="./images/pc_gallary_03-100.jpg" alt="">
-  </picture>
-</div>
-
-<div>
-  <picture>
-    <source srcset="./images/pc_gallary_04-100.jpg" media="(max-width: 767px)">
-    <img class="gallery-item-sp" src="./images/pc_gallary_04-100.jpg" alt="">
-  </picture>
-</div>
-
-<div>
-  <picture>
-    <source srcset="./images/pc_gallary_05-100.jpg" media="(max-width: 767px)">
-    <img class="gallery-item-sp" src="./images/pc_gallary_05-100.jpg" alt="">
-  </picture>
-</div>
-
-<div>
-  <picture>
-    <source srcset="./images/pc_gallary_01-100_2.jpg" media="(max-width: 767px)">
-    <img class="gallery-item-sp" src="./images/pc_gallary_01-100_2.jpg" alt="">
-  </picture>
-</div>
-  </div>
+  
 
 
 
@@ -281,11 +261,24 @@
 
           autoplay: true,
           autoplaySpeed: 2000,
-          dots: true,
+          slidesToShow: 5,
+          responsive: [
+         {
+            breakpoint: 767,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+         }
+         },
+         
+        ]
+        });
+
         })
 
-        
-    })
+      
+
 
 
 
